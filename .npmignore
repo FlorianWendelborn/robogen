@@ -1,0 +1,6 @@
+.git/
+.gitignore
+.tern-project
+node_modules/
+npm-debug.log
+source/
