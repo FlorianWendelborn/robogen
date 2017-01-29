@@ -1,6 +1,6 @@
 {
   "name": "robogen",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Robots.txt generator done right.",
   "main": "build",
   "scripts": {
