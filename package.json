@@ -1,0 +1,37 @@
+{
+  "name": "robogen",
+  "version": "0.0.1",
+  "description": "Robots.txt generator done right.",
+  "main": "build",
+  "scripts": {
+    "build": "babel source -d build",
+    "watch": "nodemon -e js --watch package.json --watch source --watch example --exec \"npm run -s build && node example\"",
+    "prepublishOnly": "npm run build && git tag $(node -e \"console.log(require'./package.json').version)\") && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://dodekeract@github.com/dodekeract/robogen.git"
+  },
+  "keywords": [
+    "robots.txt",
+    "robots",
+    "txt",
+    "generator"
+  ],
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-0"
+    ]
+  },
+  "author": "Florian Wendelborn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dodekeract/robogen/issues"
+  },
+  "homepage": "https://github.com/dodekeract/robogen#readme",
+  "devDependencies": {
+    "babel-preset-stage-0": "^6.22.0",
+    "nodemon": "^1.11.0"
+  }
+}
