@@ -25,7 +25,7 @@ console.log(robotsTXT)
 
 This will output
 
-```
+```http
 User-agent: *
 Allow: /
 Disallow: /secret
