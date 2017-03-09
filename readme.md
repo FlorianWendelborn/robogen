@@ -4,6 +4,8 @@
 
 Takes an array of objects that describe rules. Converts them to an appropriate `robots.txt`.
 
+[![Slack](https://slack.dodekeract.com/badge.svg)](https://slack.dodekeract.com)
+
 ## Usage
 
 Generate a `robots.txt`:
